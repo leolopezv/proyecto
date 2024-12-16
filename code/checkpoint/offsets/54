@@ -1,4 +1,4 @@
 v1
-{"batchWatermarkMs":1734301431247,"batchTimestampMs":1734301576976,"conf":{"spark.sql.streaming.stateStore.providerClass":"org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider","spark.sql.streaming.flatMapGroupsWithState.stateFormatVersion":"2","spark.sql.streaming.multipleWatermarkPolicy":"min","spark.sql.streaming.aggregation.stateFormatVersion":"2","spark.sql.shuffle.partitions":"200"}}
-{"consumo-en-samborondon":{"2":18399,"1":18540,"0":18561}}
-{"consumo-en-daule":{"2":9103,"1":9259,"0":9388}}
+{"batchWatermarkMs":1734331812650,"batchTimestampMs":1734331938691,"conf":{"spark.sql.streaming.stateStore.providerClass":"org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider","spark.sql.streaming.flatMapGroupsWithState.stateFormatVersion":"2","spark.sql.streaming.multipleWatermarkPolicy":"min","spark.sql.streaming.aggregation.stateFormatVersion":"2","spark.sql.shuffle.partitions":"200"}}
+{"consumo-en-samborondon":{"2":9108,"1":9171,"0":9084}}
+{"consumo-en-daule":{"2":4457,"1":4607,"0":4586}}

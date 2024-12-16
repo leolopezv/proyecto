@@ -12,6 +12,10 @@
     PD: no abrir ventanas para monitorear lo que se manda. luego no agarra en el programa
 
 3. terminal vscode nueva:
+
+    docker cp libs/spark-sql-kafka-0-10_2.11-2.4.5.jar jupyter:/opt/spark/jars/
+    docker cp libs/kafka-clients-2.4.1.jar jupyter:/opt/spark/jars/
+    
     # Copy to Spark Master
     docker cp ./libs/spark-sql-kafka-0-10_2.11-2.4.5.jar master:/opt/spark/jars/
     docker cp ./libs/kafka-clients-2.4.1.jar master:/opt/spark/jars/
