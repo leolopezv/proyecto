@@ -9,8 +9,6 @@
 
     kafka-topics --create --topic output --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1
 
-    PD: no abrir ventanas para monitorear lo que se manda. luego no agarra en el programa
-
 3. terminal:
 
     docker cp libs/spark-sql-kafka-0-10_2.11-2.4.5.jar jupyter:/opt/spark/jars/
