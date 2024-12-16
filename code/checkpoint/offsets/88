@@ -1,0 +1,4 @@
+v1
+{"batchWatermarkMs":1734301978321,"batchTimestampMs":1734302131893,"conf":{"spark.sql.streaming.stateStore.providerClass":"org.apache.spark.sql.execution.streaming.state.HDFSBackedStateStoreProvider","spark.sql.streaming.flatMapGroupsWithState.stateFormatVersion":"2","spark.sql.streaming.multipleWatermarkPolicy":"min","spark.sql.streaming.aggregation.stateFormatVersion":"2","spark.sql.shuffle.partitions":"200"}}
+{"consumo-en-samborondon":{"2":27509,"1":27850,"0":27841}}
+{"consumo-en-daule":{"2":13698,"1":13887,"0":14015}}

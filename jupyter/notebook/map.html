@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_38b1553380616f1ac6811114f2a252f2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_38b1553380616f1ac6811114f2a252f2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_38b1553380616f1ac6811114f2a252f2 = L.map(
+                "map_38b1553380616f1ac6811114f2a252f2",
+                {
+                    center: [-1.9695, -79.9235],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_993faef362cf50a95cbda822a183fd46 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_993faef362cf50a95cbda822a183fd46.addTo(map_38b1553380616f1ac6811114f2a252f2);
+        
+    
+            var marker_cluster_10a7a106d128ef6f5b729ea96c9f39de = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var circle_marker_ef470b210445f1020517263f0c230fe4 = L.circleMarker(
+                [-1.87, -79.98],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_10a7a106d128ef6f5b729ea96c9f39de);
+        
+    
+        var popup_9f722b5ca72f8a2308e2a3fce94c440a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_067a41daa364df69a16f3eb5e74dab5e = $(`<div id="html_067a41daa364df69a16f3eb5e74dab5e" style="width: 100.0%; height: 100.0%;">Region: Daule<br>Avg Consumo: 1002.96 kWh<br>Peak: Yes</div>`)[0];
+                popup_9f722b5ca72f8a2308e2a3fce94c440a.setContent(html_067a41daa364df69a16f3eb5e74dab5e);
+            
+        
+
+        circle_marker_ef470b210445f1020517263f0c230fe4.bindPopup(popup_9f722b5ca72f8a2308e2a3fce94c440a)
+        ;
+
+        
+    
+    
+            var circle_marker_c9de5216e523e86e47b5502fd1d44c1d = L.circleMarker(
+                [-1.872, -79.982],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_10a7a106d128ef6f5b729ea96c9f39de);
+        
+    
+        var popup_f933f32049d72dabf6d3c4b7eb549e78 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_82a31e014d8f38dc89231a31337f551d = $(`<div id="html_82a31e014d8f38dc89231a31337f551d" style="width: 100.0%; height: 100.0%;">Region: Daule<br>Avg Consumo: 1002.96 kWh<br>Peak: Yes</div>`)[0];
+                popup_f933f32049d72dabf6d3c4b7eb549e78.setContent(html_82a31e014d8f38dc89231a31337f551d);
+            
+        
+
+        circle_marker_c9de5216e523e86e47b5502fd1d44c1d.bindPopup(popup_f933f32049d72dabf6d3c4b7eb549e78)
+        ;
+
+        
+    
+    
+            var circle_marker_122e258f89b8aa27e7128a71c5ab15da = L.circleMarker(
+                [-1.874, -79.984],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_10a7a106d128ef6f5b729ea96c9f39de);
+        
+    
+        var popup_09d7f29eb712db54a60cebdfa4532650 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bcb78743b685da9bf02e510b526b4e59 = $(`<div id="html_bcb78743b685da9bf02e510b526b4e59" style="width: 100.0%; height: 100.0%;">Region: Daule<br>Avg Consumo: 1002.96 kWh<br>Peak: Yes</div>`)[0];
+                popup_09d7f29eb712db54a60cebdfa4532650.setContent(html_bcb78743b685da9bf02e510b526b4e59);
+            
+        
+
+        circle_marker_122e258f89b8aa27e7128a71c5ab15da.bindPopup(popup_09d7f29eb712db54a60cebdfa4532650)
+        ;
+
+        
+    
+    
+            marker_cluster_10a7a106d128ef6f5b729ea96c9f39de.addTo(map_38b1553380616f1ac6811114f2a252f2);
+        
+</script>
+</html>
