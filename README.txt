@@ -1,4 +1,4 @@
-1. docker-compose up --build (build la primera vez)
+1. docker-compose up --build
 
 2. contenedor zookeeper, exec:
     kafka-topics --create --topic consumo-electricidad --bootstrap-server localhost:9092 --replication-factor 1 --partitions 3
@@ -11,7 +11,7 @@
 
     PD: no abrir ventanas para monitorear lo que se manda. luego no agarra en el programa
 
-3. terminal vscode nueva:
+3. terminal:
 
     docker cp libs/spark-sql-kafka-0-10_2.11-2.4.5.jar jupyter:/opt/spark/jars/
     docker cp libs/kafka-clients-2.4.1.jar jupyter:/opt/spark/jars/
@@ -37,22 +37,11 @@
 5. crear los archivos 'sensor', 'procesamiento' y 'visualizacion' (ver carpeta jupyter o archivos) en jupyter
     los bloques de código están separados por ###
 
-6. orden ideal para mandar a correr archivos:
+6. orden para ejecutar archivos:
     'sensor' -> 'middleware' -> 'procesamiento' -> 'visualizacion'
 
-extra:
-- cuando se detenga el archivo 'procesamiento', ejecutar los dos últimos bloques de código:
-    for stream in spark.streams.active:
-    print(f"Stopping stream: {stream.id}")
-    stream.stop()
------------------------------------------------------
-    import shutil
-    shutil.rmtree('./check.txt', ignore_errors=True)
------------------------------------------------------
-    si no se hace esto, van a salir errores
 
-- si solo se detiene 'procesamiento', y se lo manda a correr sin detener a los demás, no saldrá nada en 'visualizacion'
-- tldr: si se detiene un archivo, es mejor detener todos
+- cuando se detenga el archivo 'procesamiento', ejecutar los dos últimos bloques de código
 
 LOCAL HOST DE JUPYTER
 http://localhost:8888/tree?#notebooks
