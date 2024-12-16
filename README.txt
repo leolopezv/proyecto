@@ -28,17 +28,16 @@
     docker cp ./libs/spark-sql-kafka-0-10_2.11-2.4.5.jar worker2:/opt/spark/jars/
     docker cp ./libs/kafka-clients-2.4.1.jar worker2:/opt/spark/jars/
 
-    estos son los jars necesarios para la integración de spark y kafka
-
 4. para ir a jupyter -> localhost:8888  
     4.1. si pide un token -> docker exec -it jupyter bash -c "jupyter notebook list"
-    copiar el token que salga en el link
+    copiar el token que salga en el link e ingresarlo en la pantalla de login
 
 5. crear los archivos 'sensor', 'procesamiento' y 'visualizacion' (ver carpeta jupyter o archivos) en jupyter
     los bloques de código están separados por ###
 
 6. orden para ejecutar archivos:
     'sensor' -> 'middleware' -> 'procesamiento' -> 'visualizacion'
+
 
 
 - cuando se detenga el archivo 'procesamiento', ejecutar los dos últimos bloques de código
